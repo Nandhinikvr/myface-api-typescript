@@ -1,0 +1,312 @@
+$MarginSize: 48px;
+$ColumnSize:48px;
+$RowSize:48px;
+
+.routerBody{
+    place-items: flex-start;
+    .title{
+        color:chocolate;
+        width:auto;
+        display: flex;
+     justify-content: space-around;
+     align-items: flex-start;
+    //  width: 250px;
+     flex-direction: row;
+     border: black;
+     margin-left: $MarginSize;
+     margin-right: $MarginSize;
+
+    }
+}
+
+h2.subtitle{
+    line-height: 40px;
+    font-weight: 400;
+    margin-left: 10%;
+    color:blue;
+}
+.formmessage{
+    color:green;
+}
+.post{
+    display: flex; 
+    flex-direction: column;
+    margin-left: $MarginSize;
+    margin-right: $MarginSize;
+    border: blue;
+ }
+ .imageSize{
+     width:20%
+ }
+ .postImage{
+     width:20%
+ }
+ .linktag{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     width: 250px;
+     flex-direction: column;
+     border: black;
+     margin-left: $MarginSize;
+     margin-right: $MarginSize; 
+     &:hover {
+        color: green
+     }
+ }
+
+
+.flexContainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: $MarginSize;
+    margin-right: $MarginSize;
+    .subtitle{
+        color:aqua
+    }
+    
+
+}
+.coverImage{
+    grid-column: 1 /span 4;
+    grid-row: 1 /span 2;
+    width: 100%;
+    height: 100%; 
+    object-fit:fill; 
+    overflow: hidden;
+}
+
+.transparentDiv{
+    grid-row: 2 /span 1;
+    grid-column: 3 /span 2;
+    background-color: #151820;
+    opacity: 56%;
+    height: 100%;
+    width: auto;
+    overflow:hidden;
+} 
+
+.profileImage{
+    grid-column: 2 /span 2;
+    grid-row: 2 /span 3;
+    width: 100%;
+    height: auto;
+    object-fit: fill;  
+    border-radius: 50%;
+    z-index: 1;
+    justify-self: center;
+    border-style: solid;
+    border-color:white;
+    border-width: thick;
+}
+
+.profileContainer h3{
+    grid-column: 4 /span 1;
+    grid-row: 2 /span 1;
+    font-size: 24px;
+    color: blue;
+    z-index: 1;
+    align-self: end; 
+    padding-left: 24px;
+    font-weight: 400;
+}
+
+
+.profileInfo{
+    grid-column: 4 /span 1;
+    grid-row: 3 /span 1;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+    padding-top: 10px;
+}
+
+
+.postsContainer{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-left: $MarginSize;
+    margin-right: $MarginSize;
+    column-gap: 48px;
+    row-gap: 48px;
+
+}
+.postContainer{
+    display:flex;
+    flex-direction:column;
+    width: 30%;
+    height:30%;
+    background-color:#151820
+}
+.profileContainer{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 70%;
+    grid-template-rows: 60% 20% 20%;
+    margin-left: $MarginSize;
+    margin-right: $MarginSize;
+    margin-bottom: $MarginSize;
+    
+}
+
+.coverImage{
+    grid-column: 1 /span 4;
+    grid-row: 1 /span 2;
+    width: 100%;
+    height: 100%; 
+    object-fit:fill; 
+    overflow: hidden;
+}
+
+.transparentDiv{
+    grid-row: 2 /span 1;
+    grid-column: 3 /span 2;
+    background-color: #151820;
+    opacity: 56%;
+    height: 100%;
+    width: auto;
+    overflow:hidden;
+} 
+
+.profileImage{
+    grid-column: 2 /span 2;
+    grid-row: 2 /span 3;
+    width: 100%;
+    height: auto;
+    object-fit: fill;  
+    border-radius: 50%;
+    z-index: 1;
+    justify-self: center;
+    border-style: solid;
+    border-color:white;
+    border-width: thick;
+}
+
+.profileInfo{
+    grid-column: 4 /span 1;
+    grid-row: 3 /span 1;
+    align-self: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 24px;
+    padding-top: 10px;
+}
+
+.profileName{
+    font-size: 12px;
+    color: green;
+    font-weight: 600;
+}
+
+.profileEmail{
+    font-size: 12px;
+    color: rgb(116, 38, 38);
+    font-weight: 300;
+}
+
+/* posts */
+
+.postsContainer{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-left: $MarginSize;
+    margin-right: $MarginSize;
+    margin-bottom: $MarginSize;
+    column-gap: $ColumnSize;
+    row-gap: $RowSize;
+}
+
+.postContainer{
+    display:flex;
+    flex-direction:column;
+    width: 30%;
+    height:30%;
+    background-color:#151820
+}
+
+.postImage{
+    width:100%;
+    height:auto;
+}
+
+.postInfo{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding: 10px;
+    color: brown;
+}
+
+.postUsername{
+    color: red;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.postCreatedAt{
+    color: blue;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.postMessage{
+    color: green;
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+/* buttons */
+.buttonContainer{
+    display:flex;
+    justify-content: flex-start;
+    margin-left: $MarginSize;
+    margin-right: $MarginSize;
+    margin-bottom: 80px;
+}
+
+button{
+    background-color:#252A38;
+    color:#2985ff;
+    font-size:24px;
+    border: 2px solid #2985ff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 48px;
+    padding-right:48px;
+    &:hover{
+        color: white;
+        border-color: white;
+    }
+}
+
+.postButtonContainer{
+    display:flex;
+    justify-content: center;
+    margin-left: $MarginSize;
+    margin-right: $MarginSize;
+    margin-top: $MarginSize;
+    margin-bottom: $MarginSize;
+}
+
+.postButton{
+    background-color:#252A38;
+    color:#2985ff;
+    font-size:12px;
+    border: 2px solid #2985ff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 48px;
+    padding-right:48px;
+}
+.users{
+    color:#2985ff;
+    font-size:12px;
+
+}
