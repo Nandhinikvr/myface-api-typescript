@@ -1,6 +1,8 @@
-import React, {useEffect, useState } from "react"; // import React (to provide access to TSX)
+import  {useEffect, useState } from "react"; // import React (to provide access to TSX)
 import { PostModel } from "../models/api/postModel";
 import './component.scss' // importing css file
+import { Link } from 'react-router-dom'
+
 
 export function Postlists() {
   const [posts, setPosts] = useState<PostModel[]>([])
@@ -19,9 +21,11 @@ export function Postlists() {
  apiPostscall();
 }, []);
 return (
-    <>
+    <>{posts &&
+      <>
     <div className="flexContainer" id="flexContainer">
     <h1 className="subtitle">Posts</h1>
+    <Link to="/" className="linktag">HomePage</Link>
     <ol className="postsContainer">
       { posts.map((post) => (
         <li className="postContainer">
@@ -37,7 +41,10 @@ return (
           </li>
         )) }
         </ol>
+        {/* <PageTemplate   {...posts}/> */}
        </div> 
+       </>
+       }
    </>
   );
 };

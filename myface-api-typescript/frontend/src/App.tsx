@@ -1,6 +1,6 @@
 import { Postlists } from './component/Postlists'
 import { UserDetail } from './component/UserDetail'
-import {BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { NavLink } from './component/NavLink'
 import './component/component.scss'
 import { Users } from './component/Users'

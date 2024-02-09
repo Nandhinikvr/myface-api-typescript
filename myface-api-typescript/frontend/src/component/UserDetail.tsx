@@ -1,6 +1,7 @@
-import React, { FC, useEffect, useState } from "react"; // import React (to provide access to TSX)
+import { useEffect, useState } from "react"; // import React (to provide access to TSX)
 import { UserModel} from  "../models/api/userModel"
 import './component.scss' // importing css file
+import { Link } from "react-router-dom";
 // import { format } from "date-fns";
 
 
@@ -55,6 +56,7 @@ export function UserDetail() {
             </ol>    
         <div className="buttonContainer">
             <button>Load More</button>  
+            <Link to="/" className="linktag">HomePage</Link>
         </div>    
     </div>
         </>
